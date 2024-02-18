@@ -8,3 +8,8 @@ urlpatterns = [
     path('contacto/', views.contacto, name='contacto')
 ]
 
+urlpatterns = [
+    path('agregar_planta/', views.registro, name='agregar_panta'),
+   
+]
+

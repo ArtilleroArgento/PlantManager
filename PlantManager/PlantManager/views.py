@@ -13,3 +13,14 @@ def contacto (request):
 
 def registro (request):
     return render(request, "AppPlantManager/registro.html")
+
+def agregar_planta(request):
+    if request.method == 'POST':
+                form = PlantForm (request.POST)
+                if form.is_valid():
+                   form.save()
+                   return
+
+
+
+     
